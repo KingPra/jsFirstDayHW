@@ -121,6 +121,7 @@ let words = 'raeat';
 let back = words.length - 1;
 for (let i = 0; i < words.length; i++) {
     if (words[i] === words[back - i]) {
+        // having trouble with this section
    console.log(true); 
 } else if (words[i] !== words[back - i]) {
     console.log(false);
