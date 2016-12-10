@@ -117,21 +117,38 @@ Create a variable called word that stores a word we want to test as a palindrome
 console.log('Finding Palindromes');
 
 
-let words = 'abcd';
-let back = word.length - 1;
-
+let words = 'raeat';
+let back = words.length - 1;
 for (let i = 0; i < words.length; i++) {
-    if (word[i] === word[back - i]) {
-   
-} 
-
-
-
-
+    if (words[i] === words[back - i]) {
+   console.log(true); 
+} else if (words[i] !== words[back - i]) {
+    console.log(false);
+}
+}
 
 
 /** 
 Hard mode
 
 Create a variable called count that keeps track of the length of the desired array. Write some code that generates the first count numbers in the Fibonacci sequence.
+ */
+
+
+console.log('Fibonacci');
+
+/**
+ * 1. var runTime for how long the loop runs
+ * 2. var startNum for the starting point (1)
+ * 3. var ansOne for the first answer
+ * 4. var ansTwo for the second answer
+ * 5. add startNum to itself and use ansOne to store the answer ansOne = startNum + startNum
+ *                                                                   2 = 1 + 1
+ * 6. add startNum to ansOne and store the answer in ansTwo. ansTwo = startNum + ansOne
+ *                                                                3 = 1 + 2
+ * 7. add ansOne to ansTwo and store new answer in ansOne .  ansOne = ansTwo + ansOne
+ *                                                                5  = 3 + 2 
+ * 8. repeat 7 for the remainder of the loop                  ansOne = ansTwo + ansOne
+ *                                                                8  = 3 + 5
+ * 9. Need to find a way to update ansTwo                         11 = 3 + 8 current code not working
  */
