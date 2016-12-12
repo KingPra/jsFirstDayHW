@@ -121,7 +121,6 @@ let words = 'raeat';
 let back = words.length - 1;
 for (let i = 0; i < words.length; i++) {
     if (words[i] === words[back - i]) {
-        // having trouble with this section
    console.log(true); 
 } else if (words[i] !== words[back - i]) {
     console.log(false);
@@ -138,6 +137,31 @@ Create a variable called count that keeps track of the length of the desired arr
 
 console.log('Fibonacci');
 
+
+
+
+let runTime = 5
+//let startNum = 1;
+//let ansOne = 1;
+//let ansTwo = [];
+let a = [];
+let b = 1;
+let c = 1;
+    a = b + c;
+for (i = 0; i< runTime; i++) {
+    //ansTwo = startNum + ansOne; 
+    //ansOne = ansOne + ansTwo;
+    //ansTwo = ansTwo + ansOne;
+    c = a + b;
+    console.log(c)
+    b = c + a;
+    console.log(b)
+    a = b + c;
+    console.log(a);
+    
+}
+
+//counter ()
 /**
  * 1. var runTime for how long the loop runs
  * 2. var startNum for the starting point (1)
@@ -151,5 +175,5 @@ console.log('Fibonacci');
  *                                                                5  = 3 + 2 
  * 8. repeat 7 for the remainder of the loop                  ansOne = ansTwo + ansOne
  *                                                                8  = 3 + 5
- * 9. Need to find a way to update ansTwo                         11 = 3 + 8 current code not working
+ * 9. Need to find a way to update ansTwo                         11 = 3 + 8
  */
